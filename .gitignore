@@ -1,0 +1,10 @@
+# this is a comment
+# \ escap character
+# / directory seperator
+# If the pattern starts with a slash, it matches files and directories only in the root.
+# If the pattern doesn’t start with a slash, it matches files and directories 
+# If the pattern ends with a slash, it matches only directories.
+# When a directory is ignored, all of its files and subdirectories are also ignored.
+Test1.ps1
+Test2.ps1
+

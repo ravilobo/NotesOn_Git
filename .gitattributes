@@ -1,0 +1,9 @@
+# binary files
+# git automatically detects these files, if not you can add them
+*.png binary
+*.jpg binary
+*.jpeg binary
+
+# remove tests directory when a user exports
+tests/*.* export-ignore
+
