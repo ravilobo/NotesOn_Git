@@ -5,7 +5,7 @@
    unstable 
  - release branch 
    you can have multiple
-   advantage is that you might have a bug to fix in a specific release branch 
+   This way if there's a bug on a particular relases, you can fix it only on that branch. 
 #>
 
 # How to find remote branch name?
@@ -16,20 +16,17 @@ git branch -vv
 git branch -v
 git remote show origin
 
-
 git branch       # list the current branch 
 git branch --all # includes REMOTE branches as well 
 git branch -a    # same as above
 git branch -r    # 
-
-
 
 git branch ideas # creates a new branch 
 git switch ideas # you can use CHECKOUT as well for switching branches 
 # however switch is newer and was introduced only for switching branches 
 # checkout does other things as well 
 # switch changes local folder content
-# switch also moved head, which is a pointer to the pointer 
+# switch also moves head, which is a pointer to the latest commit 
 # git fetch will copy the branches created remote to locally 
 git branch 
 git switch main 
@@ -37,6 +34,7 @@ git merge ideas
 git branch -d ideas #delete a branch 
 
 git checkout -b Testing #creating branch 
+
 # conflict 
 # in the case of a conflict you'll see the >>>>>>>>>>>>> in the file 
 # fix it manually 

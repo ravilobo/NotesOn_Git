@@ -4,10 +4,6 @@ copy a commit from one branch to another
 # How to find Git version?
 git version
 
-# What is head?
-Head is a refernce to a branch. (A pointer to a pointer)
-There is alway one HEAD
-
 # How to resolve conflits?
 when a conflict happens, you see <<<<<<<<<< >>>>>>>>>>> in the file in working area
 modify the content
@@ -47,12 +43,3 @@ git symbolic-ref refs/remotes/origin/HEAD refs/remotes/origin/main
 git push origin --delete master
 
 #endregion 
-
-
-#misc 
-git status # shows current modified files 
-git status --short 
-git status -s 
-
-
-

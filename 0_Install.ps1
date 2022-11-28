@@ -4,16 +4,15 @@ choco install git -y
 choco upgrade git -y
 git update-git-for-windows # prefer choco 
 
-
 #region global settings
 git --version
 git config --global --list
 git config --global -e # use this command to open the config file in vs code
 
 git config --global init.defaultbranch main  
+
 # config
 # there are 3: local, global and system with increasing hirearchy
-C:\Ravi\Languages\.git\config
 git config --global user.name # list
 git config --local  user.name
 git config --system  user.name
