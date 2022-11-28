@@ -1,7 +1,7 @@
 # Making changes in working area. SINGLE FILE (file operation)
 # 1 delete a file
 git rm file-name                    # removes file from working area (also from stage!)
-git rm redundantfile --cashed       # removes only from STAGE
+git rm redundantfile --cached       # removes only from STAGE
 git rm RedundantFOLDER -r
 # 2 restore a file
 git checkout 8a7b201 index.html     # This will create a detached-head, use RESTORE instead. 
@@ -27,7 +27,7 @@ git stash list
 
 #How to UNSTAGE a single FILE?
 # 1
-git rm redundantfile --cashed    #removes only from STAGE
+git rm redundantfile --cached    #removes only from STAGE
 # 2
 git reset HEAD menu.txt          # current commit from repo to stage  ONE FILE
 git reset HEAD menu.txt --mixed  # current commit from repo to stage  ONE FILE
@@ -87,3 +87,5 @@ git mv readme.txt readme.md
 git diff         # when no parameters provided working area & stage are compared 
 git difftool     # same as above 
 git diff --stage # compare stage to repo 
+
+# 
